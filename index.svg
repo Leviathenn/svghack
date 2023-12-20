@@ -1,0 +1,10 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="50" />
+    <script>
+        var connection = new WebSocket('ws://192.168.1.74:2232');
+
+        connection.onopen = function () {
+            connection.send('Ping'); // Send the message 'Ping' to the server
+        };
+    </script>
+</svg>
